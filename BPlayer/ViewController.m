@@ -13,6 +13,8 @@
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
+#define WIDTH_OF_PROCESS_LABLE (300 *[UIScreen mainScreen].bounds.size.width / 375)
+
 @interface ViewController ()
 
 @property (nonatomic, strong)BPlayer *bPlayer;
@@ -32,7 +34,13 @@
     [self.bPlayer m_playWithURL:[NSURL URLWithString:@"http://znf.oss-cn-shanghai.aliyuncs.com/course/znf2017031401/znf2017031401001.mp4"]];
 
     
-
+    //高度计算
+    NSString *str = @"nfsfnsfsdfkjskfskfhsfkjskjfsuf";
+    NSDictionary *fontDic=@{NSFontAttributeName:[UIFont systemFontOfSize:12]};
+    CGSize size1=CGSizeMake(WIDTH_OF_PROCESS_LABLE,0);
+    CGSize lableSize = [str boundingRectWithSize:size1 options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:fontDic context:nil].size;
+    NSLog(@"%f -- %f",lableSize.width,lableSize.height);
+    
 }
 
 
