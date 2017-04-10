@@ -16,6 +16,7 @@
 		7A7712F81E975D0300F9AA59 /* BPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7712F71E975D0300F9AA59 /* BPlayerTests.m */; };
 		7A7713031E975D0300F9AA59 /* BPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7713021E975D0300F9AA59 /* BPlayerUITests.m */; };
 		7A7713121E97728500F9AA59 /* BPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7713111E97728500F9AA59 /* BPlayer.m */; };
+		7A9281CE1E9B216700B7A915 /* BAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9281CD1E9B216700B7A915 /* BAVPlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		7A7713041E975D0300F9AA59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A7713101E97728500F9AA59 /* BPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPlayer.h; sourceTree = "<group>"; };
 		7A7713111E97728500F9AA59 /* BPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPlayer.m; sourceTree = "<group>"; };
+		7A9281CC1E9B216700B7A915 /* BAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAVPlayerViewController.h; sourceTree = "<group>"; };
+		7A9281CD1E9B216700B7A915 /* BAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAVPlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				7A7712E11E975D0300F9AA59 /* AppDelegate.m */,
 				7A7712E31E975D0300F9AA59 /* ViewController.h */,
 				7A7712E41E975D0300F9AA59 /* ViewController.m */,
+				7A9281CC1E9B216700B7A915 /* BAVPlayerViewController.h */,
+				7A9281CD1E9B216700B7A915 /* BAVPlayerViewController.m */,
 				7A7713101E97728500F9AA59 /* BPlayer.h */,
 				7A7713111E97728500F9AA59 /* BPlayer.m */,
 				7A7712E61E975D0300F9AA59 /* Main.storyboard */,
@@ -281,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A9281CE1E9B216700B7A915 /* BAVPlayerViewController.m in Sources */,
 				7A7712E51E975D0300F9AA59 /* ViewController.m in Sources */,
 				7A7712E21E975D0300F9AA59 /* AppDelegate.m in Sources */,
 				7A7712DF1E975D0300F9AA59 /* main.m in Sources */,
@@ -522,6 +528,7 @@
 				7A7713091E975D0300F9AA59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A77130A1E975D0300F9AA59 /* Build configuration list for PBXNativeTarget "BPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +537,7 @@
 				7A77130C1E975D0300F9AA59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A77130D1E975D0300F9AA59 /* Build configuration list for PBXNativeTarget "BPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +546,7 @@
 				7A77130F1E975D0300F9AA59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

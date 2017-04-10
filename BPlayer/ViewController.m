@@ -28,19 +28,28 @@
     self.bPlayer = bPlayer;
     bPlayer.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:bPlayer];
+    
+    [self.bPlayer m_playWithURL:[NSURL URLWithString:@"http://znf.oss-cn-shanghai.aliyuncs.com/course/znf2017031401/znf2017031401001.mp4"]];
+
+    
 
 }
+
+
+- (IBAction)playAction:(UIButton *)sender {
+    [self.bPlayer m_play];
+}
+
+
+- (IBAction)stopAction:(UIButton *)sender {
+    [self.bPlayer m_pause];
+}
+
 
 -(void)dealloc{
     [BPlayer removeNotification];
 }
 
-
-- (IBAction)playAction:(UIButton *)sender {
-    
-    [self.bPlayer m_playWithURL:[NSURL URLWithString:@"http://znf.oss-cn-shanghai.aliyuncs.com/course/znf2017031401/znf2017031401001.mp4"]];
-    [self.bPlayer m_play];
-}
 
 
 @end

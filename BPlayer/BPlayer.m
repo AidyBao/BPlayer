@@ -148,10 +148,7 @@
     //监控网络加载情况属性
     [playerItem addObserver:self forKeyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew context:nil];
 }
-- (void)removeObserverFromPlayerItem:(AVPlayerItem *)playerItem{
-    [playerItem removeObserver:self forKeyPath:@"status"];
-    [playerItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
-}
+
 /**
  *  通过KVO监控播放器状态
  *
@@ -175,6 +172,11 @@
         NSTimeInterval totalBuffer = startSeconds + durationSeconds;//缓冲总长度
         NSLog(@"共缓冲：%.2f",totalBuffer);
     }
+}
+
+- (void)removeObserverFromPlayerItem:(AVPlayerItem *)playerItem{
+    [playerItem removeObserver:self forKeyPath:@"status"];
+    [playerItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
 }
 
 
