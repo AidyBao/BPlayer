@@ -40,7 +40,7 @@
     //通过AVPlayerItem创建AVPlayer
     self.player = [AVPlayer playerWithURL:playerURL];
     
-    [self.player play];
+//    [self.player play];
     
     self.audioSession = [AVAudioSession sharedInstance];
     [self.audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
